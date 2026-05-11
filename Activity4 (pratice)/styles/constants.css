@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@font-face {
+    font-family: "Japan_wave";
+    src: url("../assets/fonts/Japan_wave.ttf") format("truetype");
+}
+
+:root{
+    --background-main: #f7f7f7;
+    --background-sec: #9d2108;
+    
+    --background-gradient: radial-gradient(circle at center, #9d2108 60%, #c43417 40%, #c44427 75%, transparent 100%);
+    --font-title: "Japan_wave", sans-serif;
+    --font-main: "Josefin Sans", sans-serif;
+
+    --font-main-color: #1f1f1f;
+    --font-hover-color: rgb(147, 17, 37);
+
+    --default-box-shadow: 10px 5px 5px 10px rgba(0, 0, 0, 0.2);
+    --text-shadow: 5px 10px 10px rgba(59, 59, 59, 0.8);
+}
+
+@keyframes appear_left{
+    from{
+        opacity: 0;
+        translate: -100vw 0;
+    }
+
+    to{
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes appear_right{
+    from{
+        opacity: 0;
+        translate: 200vw 0;
+    }
+
+    to{
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes spin{
+    from{translate: 0;}
+    to{transform: translateX(-100%);}
+}
+
+@keyframes pulse{
+    0%{
+        scale: 1
+    }
+    50%{
+        scale: 1.08;
+    }
+    100%{
+        scale: 1;
+    }
+}

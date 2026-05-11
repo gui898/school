@@ -1,0 +1,185 @@
+@import url("./constants.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background-main);
+    min-height: 100vh;
+}
+
+/*---HEADER---*/
+
+header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: var(--background-main);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8em 1em;
+    flex: 1 1 0;
+    box-shadow: var(--default-box-shadow);
+    z-index: 1;
+}
+
+.nav_header{
+    display: flex;
+    gap: 3em;
+    width: 100%;
+    justify-content: center;
+}
+
+.nav_header a{
+    color: var(--font-main-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: var(--font-title);
+    font-weight: 700;
+}
+
+.nav_header a:hover{
+    color: var(--font-hover-color);
+}
+
+/*---MAIN---*/
+
+.presentation_container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../assets/images/kaizen_template.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: var(--default-box-shadow);
+}
+
+.about_container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    min-height: 500px;
+    align-items: center;
+    font-family: var(--font-main);
+    font-size: 1.8rem;
+    padding-right: 1em;
+}
+
+.hossomaki_img{
+    animation: appear_left 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+
+.classification_container{
+    background-color: var(--background-sec);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    min-height: 500px;
+    align-items: center;
+    font-family: var(--font-main);
+    color: white;
+    font-size: 1.8rem;
+    padding-left: 1em;
+    box-shadow: var(--default-box-shadow);
+}
+
+.div_dish{
+    text-align: center;
+}
+
+.dish_img{
+    animation: appear_right 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
+}
+
+.menu_container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.ballon{
+    position: absolute;
+}
+
+.b_left{
+    left: 0;
+    top: -88px;
+    transform: rotateY(180deg);
+}
+
+.b_right{
+    right: 0;
+    top: -88px;
+}
+
+.menu_container h1{
+    font-family: var(--font-title);
+    font-size: 3em;
+    font-weight: 700;
+    animation: pulse 2s linear infinite;
+    text-shadow: var(--text-shadow);
+}
+
+.carousel_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    min-height: 400px;
+    overflow: hidden;
+    gap: 1em;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 20s infinite linear;
+    padding-right: 1em;
+}
+
+.carousel_item{
+    background: var(--background-gradient);
+    padding: 1em;
+    flex: 0 0 5em;
+    border-radius: 15%;
+    text-align: center;
+    align-content: center;
+    position: relative;
+    border: 1px solid black;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-sec);
+    padding: 1em 4em;
+    font-family: var(--font-title);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.footer_contacts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em 4em;
+}
+
+footer a{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    text-decoration: none;
+    color: var(--font-main-color);
+}

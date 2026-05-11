@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.title{
+    background-color: rgb(149, 225, 108);
+}
+
+.classification{
+    background-color: rgb(44, 174, 166);
+}
+
+.features{
+    background-color: lightgray;
+}
+
+td{
+    text-align: center;
+    padding: 0.25em 0.8em;
+}
