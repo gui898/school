@@ -7,9 +7,12 @@
 
 :root{
     --background-main: #f7f7f7;
-    --background-sec: #9d2108;
-    
+    --background-sec: linear-gradient(135deg,#9d2108 0%,#b62b12 55%,#c43417 100%);    
     --background-gradient: radial-gradient(circle at center, #9d2108 60%, #c43417 40%, #c44427 75%, transparent 100%);
+    --cards-color: rgb(228, 228, 228);
+    --item-card-color: #f1f1f1;
+    --card-hover: rgba(157, 33, 8, 0.08);
+    
     --font-title: "Japan_wave", sans-serif;
     --font-main: "Josefin Sans", sans-serif;
 
@@ -18,6 +21,81 @@
 
     --default-box-shadow: 10px 5px 5px 10px rgba(0, 0, 0, 0.2);
     --text-shadow: 5px 10px 10px rgba(59, 59, 59, 0.8);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background-main);
+    min-height: 100vh;
+}
+
+/*---HEADER---*/
+
+header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: var(--background-main);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8em 1em;
+    flex: 1 1 0;
+    box-shadow: var(--default-box-shadow);
+    z-index: 1;
+}
+
+.nav_header{
+    display: flex;
+    gap: 3em;
+    width: 100%;
+    justify-content: center;
+}
+
+.nav_header a{
+    color: var(--font-main-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: var(--font-title);
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+
+.nav_header a:hover{
+    color: var(--font-hover-color);
+    transform: scale(1.08);
+    transition: 0.3s ease-in-out;
+}
+
+/*---FOOTER---*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--background-sec);
+    padding: 1em 4em;
+    font-family: var(--font-title);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.footer_contacts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em 4em;
+}
+
+footer a{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    text-decoration: none;
+    color: var(--font-main-color);
 }
 
 @keyframes appear_left{
