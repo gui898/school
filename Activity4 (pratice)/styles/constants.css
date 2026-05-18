@@ -17,6 +17,7 @@
     --font-main: "Josefin Sans", sans-serif;
 
     --font-main-color: #1f1f1f;
+    --color-text: rgb(194, 15, 15);
     --font-hover-color: rgb(147, 17, 37);
 
     --default-box-shadow: 10px 5px 5px 10px rgba(0, 0, 0, 0.2);
@@ -27,6 +28,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
