@@ -1,1 +1,9 @@
 @import url("reset.css");
+
+:root{
+    --main-color: #1a1818;
+    --blue-color: #34c9bf;
+    --gold-color: #e0b93a;
+
+    --font-main-color: #f7f7f7;
+}
