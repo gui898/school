@@ -7,3 +7,28 @@
 
     --font-main-color: #f7f7f7;
 }
+
+@font-face {
+    font-family: 'rubik-font';
+    src: url('../assets/fonts/rubik/Rubik-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'latin-font';
+    src: url('../assets/fonts/latin/Latin-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'japanese-font';
+    src: url('../assets/fonts/japanese/Japanese-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'chinese-font';
+    src: url('../assets/fonts/chinese/Chinese-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'corean-font';
+    src: url('../assets/fonts/corean/Corean-Regular.ttf') format('truetype');
+}
