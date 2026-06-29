@@ -6,7 +6,7 @@ canvas.height = window.innerHeight;
 
 const particles = [];
 
-for (let i = 0; i < 500; i++) {
+for (let i = 0; i < 1100; i++) {
   particles.push({
     x: Math.random() * canvas.width,
     y: Math.random() * canvas.height,

@@ -11,6 +11,12 @@ header{
     justify-content: space-between;
     align-items: center;
     padding:  1.5em 1.2em;
+    position: fixed;
+    top: 0;
+
+    z-index: 20;
+
+    width: 100vw;
 
     color: var(--font-main-color);
 }
@@ -20,11 +26,15 @@ header{
     align-items: center;
     justify-content: center;
     gap: 20px;
+
+    margin-left: 2em;
+    margin-right: 5em;
 }
 
 .header_left_side img {
     width: 5em;
     height: auto;
+    border-radius: 50%;
 }
 
 .header_left_side h1 {
@@ -116,4 +126,36 @@ header{
     to { 
         transform: translate(150px, -100px) scale(1.2); 
     }
+}
+
+main {
+    width: 100vw;
+}
+
+#start_home {
+    width: 100vw;
+    height: 110vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#start_home video {
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#content {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 120px;
+    color: var(--font-main-color);
+
+    width: 40vw;
+    text-align: center;
 }
