@@ -6,6 +6,8 @@ body {
     overflow-x: hidden;
 }
 
+/*-----HEADER-----*/
+
 header{
     display: flex;
     justify-content: space-between;
@@ -68,6 +70,8 @@ header{
 
     transform: scale(1.18);
 }
+
+/*-----MAIN-----*/
 
 .background {
     
@@ -144,6 +148,8 @@ main {
     height: 110%;
     object-fit: cover;
     object-position: center;
+    -webkit-mask-image: linear-gradient(to top, transparent 20%, black 100%);
+    mask-image: linear-gradient(to top, transparent 10%, black 50%);
 }
 
 #content {
@@ -156,6 +162,6 @@ main {
     font-size: 120px;
     color: var(--font-main-color);
 
-    width: 40vw;
+    width: 50vw;
     text-align: center;
 }
