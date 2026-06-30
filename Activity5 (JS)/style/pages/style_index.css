@@ -165,3 +165,73 @@ main {
     width: 50vw;
     text-align: center;
 }
+
+.second_section{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    height: 100vh;
+}
+
+.second_section h2{
+    top: 1em;
+
+    font-size: 6rem;
+    font-family: latin-font;
+    color: var(--font-main-color);
+}
+
+.carousel_external{
+    display: flex;
+    overflow-x: hidden;
+
+    width: 95%;
+}
+
+.carrousel_internal{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+
+    margin-top: 3em;
+
+    animation: spin 15s infinite linear;
+    padding-right: 2em;
+
+}
+
+.card_trip{
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex: 0 0 5em;
+    align-content: center;
+}
+
+.card_trip img{
+    border-radius: 16px;
+}
+
+.card_trip h3{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+
+    text-align: center;
+    color: var(--font-gold-color);
+    font-size: 2rem;
+    font-family: "rubik-font";
+    font-weight: 700;
+}
+
+@keyframes spin{
+    from{translate: 0;}
+    to{transform: translateX(-100%);}
+}
