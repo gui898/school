@@ -34,6 +34,7 @@
     src: url('../assets/fonts/corean/Corean-Regular.ttf') format('truetype');
 }
 
+
 ::-webkit-scrollbar {
     display: none;
 }

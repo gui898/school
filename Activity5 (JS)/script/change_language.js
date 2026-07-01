@@ -84,7 +84,7 @@ async function changeLanguage(element) {
             }
         ],
         {
-            duration: 400,
+            duration: 600,
             easing: "ease",
             fill: "forwards"
         }
