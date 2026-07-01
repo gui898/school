@@ -41,19 +41,54 @@ const ARRAY_TEXTS = [
 
 let lastIndex = -1;
 
-function changeLanguage(element) {
+async function changeLanguage(element) {
+
+    await element.animate(
+        [
+            {
+                opacity: 1,
+                transform: "translateY(0px)"
+            },
+            {
+                opacity: 0,
+                transform: "translateY(-10px)"
+            }
+        ],
+        {
+            duration: 800,
+            easing: "ease",
+            fill: "forwards"
+        }
+    ).finished;
 
     let index;
 
     do {
         index = Math.floor(Math.random() * ARRAY_TEXTS.length);
-    } 
-    while (index === lastIndex);
+    } while (index === lastIndex);
 
     lastIndex = index;
 
     element.style.fontFamily = ARRAY_TEXTS[index].font;
     element.innerText = ARRAY_TEXTS[index].text;
+
+    await element.animate(
+        [
+            {
+                opacity: 0,
+                transform: "translateY(10px)"
+            },
+            {
+                opacity: 1,
+                transform: "translateY(0px)"
+            }
+        ],
+        {
+            duration: 400,
+            easing: "ease",
+            fill: "forwards"
+        }
+    ).finished;
 }
 
 const title = document.getElementById("content_title");
